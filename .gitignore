@@ -15,8 +15,11 @@
 .genv
 
 node_modules
-dist
-!dist/node/*
+
+!dist/
+dist/*
+!dist/node
+
 package-lock.json
 coverage
 coverage.lcov
