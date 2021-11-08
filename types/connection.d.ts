@@ -108,7 +108,8 @@ export default class Connection {
   ): Promise<EndpointsResponse[Endpoints.blocksDetail]>;
 
   getTransaction<O = TransactionOperations.CREATE>(
-    transactionId: string
+    transactionId: string,
+    spent?: boolean
   ): Promise<EndpointsResponse<O>[Endpoints.transactionsDetail]>;
 
   listBlocks(transactionId: string): Promise<EndpointsResponse[Endpoints.blocks]>;
